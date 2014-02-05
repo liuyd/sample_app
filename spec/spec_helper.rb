@@ -23,6 +23,7 @@ RSpec.configure do |config|
 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
+  # 加上如下配置解决单元测试报错找不到visit方法
   config.include Capybara::DSL
 
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
