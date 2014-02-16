@@ -1,6 +1,6 @@
 SampleApp::Application.routes.draw do
 
-  get "users/new"
+  resources :users
   match '/signup', to: 'users#new',via: :get
 
   # r4相对r3需要配置http的访问方式
